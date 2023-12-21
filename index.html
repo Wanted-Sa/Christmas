@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 Christmas Letter</title>
+    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/651/42/png-clipart-computer-icons-heart-favicon-love-symbols-love-color-pencil.png">
+    <meta property="og:image"
+        content="https://www.kindpng.com/picc/m/5-50664_happy-new-year-clipart-colourful-happy-new-year.png">
+    <meta property="og:title" content="Christmas Letter">
+    <meta property="og:description" content="To 혜지">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Poor+Story&display=swap" rel="stylesheet">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <style>
+        * {
+            font-family: 'Gugi', cursive;
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/api-dev.dump-in.co.kr/reviews/1/KakaoTalk_Photo_2023-12-21-21-02-04.jpeg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 100px;
+
+            margin: 100px auto 0px auto;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: wheat;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">편지를 열어봐!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>2023 Merry Christmas</h1>
+        <div class="messagebox">
+            To. 혜지 <br />
+            2023년 혜지와 크리스마스 같이 보낼 수 있어서 좋아! <br />
+            2023년 마지막 이벤트이기도 하고 <br />
+            우리 정말 재밌게 놀자!  <br />
+            그리고 올해 정말 고생했어 ㅎㅎ <br />
+            우리 오랫동안 사랑하고 아껴주자! ❤️<br />
+            <p class="from">From 재혁</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
